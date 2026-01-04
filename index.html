@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Súp lơ - Đặc Sản Sạch</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fbf7;
+            color: #333;
+            padding-bottom: 80px; 
+        }
+
+        header {
+            background-color: #2d5a27;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        
+        .price-area {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fff9f1;
+            border-radius: 10px;
+            border: 1px solid #ffe0b2;
+        }
+
+        .price-tag {
+            font-size: 1.8rem;
+            color: #d35400;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        
+        .btn-order {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-order:hover {
+            background-color: #d35400;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(230, 126, 34, 0.4);
+        }
+
+        
+        .section { margin-bottom: 40px; }
+        .section h2 {
+            color: #2d5a27;
+            border-left: 5px solid #8dbb5e;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .content-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .content-block img {
+            flex: 1; min-width: 300px; border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .text-box { flex: 1; min-width: 300px; }
+
+        .highlight {
+            background-color: #f1f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            border-right: 4px solid #8dbb5e;
+        }
+
+        footer { text-align: center; padding: 20px; color: #666; }
+
+        
+        .fixed-order-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        @media (max-width: 600px) {
+            .content-block { flex-direction: column; }
+            .fixed-order-btn {
+                bottom: 0; left: 0; right: 0;
+                width: 100%;
+            }
+            .fixed-order-btn .btn-order {
+                border-radius: 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        div p {font-size: 20px;}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Súp lơ</h1>
+    <p>Hương vị truyền thống - Canh tác tự nhiên</p>
+</header>
+
+<div class="container">
+    <div class="price-area">
+        <span class="price-tag">Giá tiền: 17.000đ / Cây</span>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWhRJC9PVw4z4GQWXCZpbwNRzsuHfQLiwWPzBBNyvhYW5utg/viewform?usp=send_form" target="_blank" class="btn-order">
+            🛒 ĐẶT HÀNG NGAY
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>Chi tiết canh tác</h2>
+        <div class="content-block">
+            <div class="text-box">
+                <p><strong>Thổ nhưỡng:</strong> Trồng trên dải đất màu mỡ, đất thịt nhẹ, tơi xốp và cực kỳ thoáng mát. Đây là vùng đất "vàng" giúp súp lơ phát triển bộ rễ sâu, hấp thụ trọn vẹn tinh túy của đất.
+</p>
+            </div>
+            <img src="https://sf-static.upanhlaylink.com/img/image_202601030bdddcd1ad1484bf419d860dd0e42fce.jpg" alt="Vườn Súp Lơ">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content-block" style="flex-direction: row-reverse;">
+            <div class="text-box">
+                <p><strong>Chăm sóc tự nhiên:</strong> Sử dụng hoàn toàn phân chuồng ủ hoai mục để chăm. Cây lớn lên trong nền khí hậu mát mẻ, đón gió đồng tự nhiên nên bông lơ rất chặt, cánh bông khít, không bị xốp hay ngậm nước.
+</p>
+                <p><strong>An toàn:</strong> Hạn chế tối đa thuốc BVTV, thay bằng các loại chế phẩm sinh học (gừng, ớt, tỏi) để xua đuổi sâu tơ.</p>
+            </div>
+            <img src="https://sf-static.upanhlaylink.com/img/image_202601046ab9e999fdc8f227e4cf33f24081f096.jpg" alt="Quy trình sạch">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Hương vị & Món ngon</h2>
+        <div class="highlight">
+            <p>Súp lơ luộc chấm mắm trứng: Bông lơ ngọt đậm, thơm đặc trưng, khi luộc nước trong vắt.
+<br>
+              Súp lơ xào lòng gà: Miếng lơ giòn sần sật quyện với mỡ gà béo ngậy.</br>
+            </p>
+        </div>
+        <br>
+        <div class="content-block">
+            <img src="https://sf-static.upanhlaylink.com/img/image_20260104014df4945056238b99a2a137522b7d76.jpg" alt="Món ngon từ súp lơ" style="max-width: 500px; margin: 0 auto;">
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px;">
+        <h3>Bạn muốn thưởng thức Súp Lơ sạch?</h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWhRJC9PVw4z4GQWXCZpbwNRzsuHfQLiwWPzBBNyvhYW5utg/viewform?usp=send_form" target="_blank" class="btn-order">
+            BẤM VÀO ĐỂ ĐẶT HÀNG
+        </a>
+    </div>
+</div>
+
+<div class="fixed-order-btn">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScWhRJC9PVw4z4GQWXCZpbwNRzsuHfQLiwWPzBBNyvhYW5utg/viewform?usp=send_form" target="_blank" class="btn-order">
+        🛒 Đặt hàng nhanh
+    </a>
+</div>
+<a href="https://lh10lm-arch.github.io/webnongsan2/"></a>
+
+</body>
+</html>
